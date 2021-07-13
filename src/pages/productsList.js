@@ -247,15 +247,8 @@ const ProductsList = () => {
                                                                             Precio:
                                                                             $
                                                                             {
-                                                                                product.price
-                                                                            }
-                                                                            <br />
-                                                                            Final:
-                                                                            $
-                                                                            {
                                                                                 product.retail
                                                                             }
-                                                                            <br />
                                                                         </div>
                                                                     </div>
                                                                 </div>
