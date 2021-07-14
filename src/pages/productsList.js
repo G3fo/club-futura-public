@@ -110,7 +110,6 @@ const ProductsList = () => {
 
     // const buttonStyle = { alignItems: "center" };
     // const buttonStyleRight = { alignItems: "center" };
-    console.log(products);
 
     return (
         <LoadingMask loading={loading} text={"loading..."}>
@@ -148,10 +147,13 @@ const ProductsList = () => {
                     <div className="row">
                         {
                             //REFACTORING 1 ARRAY POR ARTISTA
-                        }{" "}
+                        }
                         {products.map((productsArrays) => {
                             return (
-                                <Accordion style={{ padding: "0" }}>
+                                <Accordion
+                                    key={productsArrays[0].artist}
+                                    style={{ padding: "0" }}
+                                >
                                     <Card>
                                         <Accordion.Toggle
                                             as={Card.Header}
@@ -187,6 +189,9 @@ const ProductsList = () => {
                                                     (product) => {
                                                         return (
                                                             <div
+                                                                key={
+                                                                    product._id
+                                                                }
                                                                 className="card container"
                                                                 style={{
                                                                     marginTop:
