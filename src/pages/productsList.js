@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 import ProductsDataService from "../services/productsService";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import LoadingMask from "react-loadingmask";
 import { Container, Row, Accordion, Card } from "react-bootstrap";
 import "react-loadingmask/dist/react-loadingmask.css";
 
 const ProductsList = () => {
     const [products, setProducts] = useState([]);
-    const [searchArtist, setSearchArtist] = useState("");
+    // const [searchArtist, setSearchArtist] = useState("");
     // const [artists, setArtists] = useState(["TODOS"]);
     const [loading, setLoading] = useState(true);
 
@@ -56,9 +56,9 @@ const ProductsList = () => {
     //     setSearchArtist(searchArtist);
     // };
 
-    const refreshList = () => {
-        retrieveProducts();
-    };
+    // const refreshList = () => {
+    //     retrieveProducts();
+    // };
 
     // const find = (query, by) => {
     //     setLoading(true);

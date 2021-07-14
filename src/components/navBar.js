@@ -3,7 +3,11 @@ import { Container, Row, Col } from "react-bootstrap";
 import logo from "../assets/logo.png";
 
 const NavBar = () => {
-    const divStyle = { textAlign: "center" };
+    const divStyle = {
+        textAlign: "center",
+        marginTop: "1em",
+        marginBottom: "1em",
+    };
     const style = { marginTop: "0.8em", marginBottom: "0.8em" };
     return (
         <Container>
@@ -15,7 +19,7 @@ const NavBar = () => {
                         }}
                         target="_blank"
                     >
-                        <img width="45em" src={logo} alt="logo" />
+                        <img width="65em" src={logo} alt="logo" />
                     </Link>
                 </Col>
             </Row>
